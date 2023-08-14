@@ -6,6 +6,8 @@ import './App.css'
 function App() {
   const [countA, setCountA] = useState(0);
   const [countB, setCountB] = useState(0);
+  const [countC, setCountC] = useState(0);
+
 
   const incrementCountA = () => {
     setCountA(countA + 1);
@@ -15,6 +17,10 @@ function App() {
     setCountB(countB + 1);
   };
 
+  const incrementCountC = () => {
+    setCountC(countC + 1);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -22,6 +28,8 @@ function App() {
         <div>
           <button onClick={incrementCountA}>Michael: {countA}</button>
           <button onClick={incrementCountB}>Brianna: {countB}</button>
+          <button onClick={incrementCountC}>Times Brianna was mad at my jokes: {countC}</button>
+
         </div>
       </header>
     </div>
